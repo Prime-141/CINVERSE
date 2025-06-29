@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gladiator II- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), 
+    url('gladiator.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="gladiator.avif" alt="Gladiator II Poster">
+    <a href="https://www.youtube.com/watch?v=4rgYUipGJNo"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Gladiator II</h1>
+
+    <div class="rating">
+      <span>⭐ 8.1/10 (153.3K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>2h 30m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Drama</div>
+      <div>UA</div>
+      <div>15 Nov,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Gladiator II')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>From legendary director Ridley Scott, Gladiator II continues the epic saga of power, intrigue, and vengeance set in Ancient Rome. Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius (Paul Mescal) is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Denzel_Washington"><img src="denzel-washington.avif"></a><p>Denzel Washington</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Connie_Nielsen"><img src="connie-nielsen.avif"></a><p>Connie Nielsen</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pedro_Pascal"><img src="pedro-pascal.avif"></a><p>Pedro Pasca</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Derek_Jacobi"><img src="derek-jacobi.avif"></a><p>Derek Jacobi</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Paul_Mescal"><img src="Paul_Mescal.jpg"></a><p>Paul Mescal</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Joseph_Quinn"><img src="Joseph_Quinn.jpg"></a><p>Joseph Quinn</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

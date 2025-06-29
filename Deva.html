@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sikandar- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8 ), rgba(0, 0, 0, 0.3)), 
+    url('deva.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="deva.avif" alt="Deva Poster">
+    <a href="https://www.youtube.com/watch?v=3x77q40hATw"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Deva</h1>
+
+    <div class="rating">
+      <span>⭐ 6/10 (42.6K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 36m</div>
+      <div>Action</div>
+      <div>Thriller</div>
+      <div>Drama</div>
+      <div>UA16+</div>
+      <div>31 Jan,2025</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Deva')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>DEVA is an edge-of-the-seat, power-packed thriller about a brilliant yet rebellious police officer investigating a high-profile murder case.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Shahid_Kapoor"><img src="shahid-kapoor.avif"></a><p>Shahid Kapoor</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pooja_Hegde "><img src="pooja-hegde.avif"></a><p>Pooja Hegde</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pavail_Gulati"><img src="pavail-gulati.avif"></a><p>Pavail Gulatie</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kubbra_Sait"><img src="kubbra-sait.avif"></a><p>Kubbra Sait</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pravessh_Rana"><img src="pravessh-rana.avif"></a><p>Pravessh Rana</p></div>
+        
+   </div>
+
+<script>
+  function bookMovie(Deva){
+  localStorage.setItem('selectedMovie',Deva);
+  window.location.href = "booking.html";
+}
+</script>
+
+
+</body>
+</html>

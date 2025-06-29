@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A Quiet Place: Day One- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('a-quiet-place-day-one-wallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="a-quiet-place-day-one-wallpapers.jpg" alt="A Quiet Place: Day One Poster">
+    <a href="https://www.youtube.com/watch?v=YPY7J-flzE8"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>A Quiet Place: Day One</h1>
+
+    <div class="rating">
+      <span>⭐ 6.3/10 (150K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      
+    </div>
+
+    <div class="info">
+      <div>1h 39m</div>
+      <div>Action</div>
+      <div>Drama</div>
+      <div>Horror</div>
+      <div>PG-13</div>
+      <div>28 Jun,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('A Quiet Place: Day One')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>A young woman named Sam finds herself trapped in New York City during the early stages of an invasion by alien creatures with ultra-sensitive hearing.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Lupita_Nyong%27o"><img src="lupita-nyong.avif"></a><p>Lupita Nyong'o</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Joseph_Quinn"><img src="Joseph_Quinn.jpg"></a><p>Joseph Quinn</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Alex_Wolff"><img src="Alex-Wolff.png"></a><p>Alex Wolff</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Djimon_Hounsou"><img src="Djimon_Hounsou.jpg"></a><p>Djimon Hounsou</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Eliane_Umuhire"><img src="Eliane-Umuhire.png"></a><p>Eliane Umuhire</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Ronnie_Le_Drew"><img src="Ronnie-le-drew.jpg"></a><p>Ronnie Le Drew</p></div>
+   </div>
+
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

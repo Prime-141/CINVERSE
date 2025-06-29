@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inside Out 2 - Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
+    url('inside-out2-wallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="inside-out-2.avif" alt="Inside Out 2">
+    <a href="https://www.youtube.com/watch?v=LEjhY15eCx0"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Inside Out 2</h1>
+
+    <div class="rating">
+      <span>⭐ 9.2/10 (36.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+    </div>
+
+    <div class="info">
+      <div>1h 40m</div>
+      <div>Drama</div>
+      <div>comedy</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>14 Jun,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Inside Out 2')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>Disney and Pixar`s "Inside Out 2" returns to the mind of newly minted teenager Riley just as headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new emotions! Joy, Sadness, Anger, Fear and Disgust, who`ve long been running a successful operation by all accounts, aren`t sure how to feel when Anxiety shows up. And it looks like she`s not alone.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Inside_Out_2#cite_note-NewTrailerCastWDC-14"><img src="kensington-tallman.avif"></a><p>Kensington Tallman</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Amy_Poehler"><img src="amy-poehler.avif"></a><p>Amy Poehler</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Maya_Hawke"><img src="maya-hawke.avif"></a><p>Maya Hawke</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Lewis_Black"><img src="lewis-black.avif"></a><p>Lewis Black</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Phyllis_Smith"><img src="phyllis-smith.avif"></a><p>Phyllis Smith</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Tony_Hale"><img src="tony-hale.avif"></a><p>Tony Hale</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

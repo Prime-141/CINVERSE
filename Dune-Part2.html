@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dune: Part Two- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('dune-part2.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="dune-part2.avif" alt="Dune: Part Two Poster">
+    <a href="https://www.youtube.com/watch?v=Way9Dexny3w "target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Dune: Part Two</h1>
+
+    <div class="rating">
+      <span>⭐ 8.5/10 (626K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 46m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Sci-Fi</div>
+      <div>UA</div>
+      <div>1 Mar,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Dune: Part Two')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Dune: Part Two will explore the mythic journey of Paul Atreides as he unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love and the fate of the known universe, he endeavors to prevent a terrible future only he can foresee.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Timoth%C3%A9e_Chalamet"><img src="timoth_e-chalamet.avif"></a><p>Timothée Chalamet</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Zendaya"><img src="zendaya.avif"></a><p>Zendaya</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Rebecca_Ferguson"><img src="rebecca-ferguson.avif"></a><p>Rebecca Ferguson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Josh_Brolin"><img src="josh-brolin.avif"></a><p>Josh Brolin</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Austin_Butler"><img src="austin-butler.avif"></a><p>Austin Butler</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Florence_Pugh"><img src="florence-pugh.avif"></a><p>Florence Pugh</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

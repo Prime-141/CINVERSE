@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Godzilla x Kong: The New Empire- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('godzilla-x-kong-the-new-empire.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="godzilla-x-kong-the-new-empire.avif" alt="Godzilla x Kong: The New Empire">
+    <a href="https://www.youtube.com/watch?v=qqrpMRDuPfc"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Godzilla x Kong: The New Empire</h1>
+
+    <div class="rating">
+      <span>⭐ 6/10 (122K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>1h 55m</div>
+      <div>Action</div>
+      <div>Sci-Fi</div>
+      <div>Thriller</div>
+      <div>PG-13</div>
+      <div>29 Mar,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Godzilla x Kong: The New Empire')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>An all-new adventure that pits the almighty Kong and the fearsome Godzilla against a colossal undiscovered threat hidden within our world, challenging their very existence-and our own.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Rebecca_Hall"><img src="rebecca-hall.avif"></a><p>Rebecca Hall</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Brian_Tyree_Henry"><img src="brian-tyree-henry.avif"></a><p>Brian Tyree Henry</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Dan_Stevens"><img src="dan-stevens.avif"></a><p>Dan Stevens</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Rachel_House"><img src="rachel-house.avif"></a><p>Rachel House</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kaylee_Hottle"><img src="Kaylee-Hottle.jpeg"></a><p>Kaylee Hottle</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Alex_Ferns"><img src="Alex-Ferns.jpeg"></a><p>Alex Ferns</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Red One- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8 ), rgba(0, 0, 0, 0.3)), 
+    url('baby-john.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="baby-john.avif" alt="Baby John Poster">
+    <a href="https://www.youtube.com/watch?v=qyRn3rPRw8w"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Baby John</h1>
+
+    <div class="rating">
+      <span>⭐ 6.6/10 (20K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 41m</div>
+      <div>Action</div>
+      <div>Thriller</div>
+      <div>Drama</div>
+      <div>UA16+</div>
+      <div>25 Dec,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Baby John')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Atlee`s Baby John, starring Varun Dhawan, Jackie Shroff, Wamiqa Gabbi and Keerthy Suresh, is a high-octane action thriller that follows a fearless cop leading a double life to protect his daughter from a deadly underworld.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Varun_Dhawan"><img src="varun-dhawan.avif"></a><p>Varun Dhawan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Keerthy_Suresh"><img src="keerthy-suresh.avif"></a><p>Keerthy Suresh</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Wamiqa_Gabbi"><img src="wamiqa-gabbi.avif"></a><p>Wamiqa Gabbi</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Jackie_Shroff"><img src="jackie-shroff.avif"></a><p>Jackie Shroff</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Rajpal_Yadav"><img src="rajpal-yadav.avif"></a><p>Rajpal Yadav</p></div>
+    
+   </div>
+
+<script>
+  function bookMovie(BabyJohn){
+  localStorage.setItem('selectedMovie',BabyJohn  );
+  window.location.href = "booking.html";
+}
+</script>
+
+
+</body>
+</html>

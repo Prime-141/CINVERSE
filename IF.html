@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IF (2024)- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), 
+    url('if-2024.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="if-2024.avif" alt="IF (2024) Poster">
+    <a href="https://www.youtube.com/watch?v=mb2187ZQtBE"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>IF (2024)</h1>
+
+    <div class="rating">
+      <span>⭐ 8.3/10 (6.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+    </div>
+
+    <div class="info">
+      <div>1h 44m</div>
+      <div>Drama</div>
+      <div>comedy</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>17 May, 2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('IF')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>IF is about a girl who discovers that she can see everyone`s imaginary friends - and what she does with that superpower - as she embarks on a magical adventure to reconnect forgotten IFs with their kids.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Ryan_Reynolds"><img src="ryan-reynolds.avif"></a><p>Ryan Reynolds</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/John_Krasinski  "><img src="john-krasinski.avif"></a><p>John Krasinski</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Steve_Carell"><img src="steve-carell.avif"></a><p>Steve Carell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Jennifer_Coolidge"><img src="fiona-shaw.avif"></a><p>Fiona Shaw</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Matt_Damon"><img src="matt-damon.avif"></a><p>Matt Damon</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Emily_Blunt "><img src="emily-blunt.avif"></a><p>Emily Blunt</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

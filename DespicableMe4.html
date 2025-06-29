@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Despicable Me 4- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), 
+    url('despicable-me-4.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="despicable-me-4.avif" alt="Despicable Me 4">
+    <a href="https://www.youtube.com/watch?v=qQlr9-rF32A"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Despicable Me 4</h1>
+
+    <div class="rating">
+      <span>⭐ 7.9/10 (2.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Telugu</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+    </div>
+
+    <div class="info">
+      <div>1h 34m</div>
+      <div>Action</div>
+      <div>Comedy</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>5 Jul,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Despicable Me 4')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>Gru welcomes a new member to the family, Gru Jr., who's intent on tormenting his dad. However, their peaceful existence crashes when criminal mastermind Maxime Le Mal escapes from prison and vows revenge against Gru.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Steve_Carell"><img src="steve-carell.avif"></a><p>Steve Carell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Will_Ferrell"><img src="will-ferrell.avif"></a><p>Will Ferrell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Joey_King"><img src="joey-king.avif"></a><p>Joey King</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Miranda_Cosgrove"><img src="miranda-cosgrove.avif"></a><p>Miranda Cosgrove</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kristen_Wiig"><img src="kristen-wiig.avif"></a><p>Kristen Wiig</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pierre_Coffin"><img src="pierre-coffin.avif"></a><p>Pierre Coffin</p></div>
+   </div>
+
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

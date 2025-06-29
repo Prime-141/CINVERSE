@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Deadpool & Wolverine- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+    url('deadpool-wolverine-wallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="deadpool-and-wolverine.avif" alt="Deadpool & Wolverine Poster">
+    <a href="https://www.youtube.com/watch?v=73_1biulkYk"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Deadpool & Wolverine</h1>
+
+    <div class="rating">
+      <span>⭐ 8.7/10 (153.3K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>2h 8m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Comedy</div>
+      <div>A</div>
+      <div>26 Jul,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Deadpool & Wolverine')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Wolverine is recovering from his injuries when he meets the loudmouth, Deadpool. They team up to defeat a common enemy.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Ryan_Reynolds"><img src="ryan-reynolds.avif"></a><p>Ryan Reynolds</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Hugh_Jackman"><img src="hugh-jackman.avif"></a><p>Hugh Jackman</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Morena_Baccarin"><img src="morena-baccarin.avif"></a><p>Morena Baccarin</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Matthew_Macfadyen"><img src="matthew-macfadyen.avif"></a><p>Matthew Macfadyen</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Emma_Corrin"><img src="Emma_Corrin.jpg"></a><p>Emma Corrin</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Leslie_Uggams"><img src="leslie-uggams.avif"></a><p>Leslie Uggams</p></div>
+   </div>
+
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

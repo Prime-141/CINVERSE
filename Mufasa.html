@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mufasa: The Lion King- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), 
+    url('mufasa-the-lion-king-wallpapers.webp');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="mufasa-the-lion-king.avif" alt="Mufasa: The Lion King Poster">
+    <a href="https://www.youtube.com/watch?v=o17MF9vnabg"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Mufasa: The Lion King</h1>
+
+    <div class="rating">
+      <span>⭐ 8.4/10 (80K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Telugu</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+    </div>
+
+    <div class="info">
+      <div>1h 40m</div>
+      <div>Adventure</div>
+      <div>Drama</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>20 Dec,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Mufasa')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>"Mufasa: The Lion King" enlists Rafiki to relay the legend of the unlikely rise of the beloved king of the Pride Lands, introducing an orphaned cub called Mufasa, a sympathetic lion named Taka - the heir to a royal bloodline - and their expansive journey alongside an extraordinary group of misfits.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Aaron_Pierre_(actor)"><img src="Aaron_Pierre.png"></a><p>Aaron Pierre</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kelvin_Harrison_Jr."><img src="Kelvin_Harrison_Jr.png"></a><p>Kelvin Harrison Jr.</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Seth_Rogen"><img src="seth-rogen.avif"></a><p>Seth Rogen</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Billy_Eichner"><img src="billy-eichner.avif"></a><p>Billy Eichner</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Donald_Glover"><img src="donald-glover.avif"></a><p>Donald Glover</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Mads_Mikkelsen"><img src="mads-mikkelsen.avif"></a><p>Mads Mikkelsen</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

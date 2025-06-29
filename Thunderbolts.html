@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thunderbolts- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('thunderboltswallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="thunderbolts.avif" alt="Thunderbolts">
+    <a href="https://www.youtube.com/watch?v=Oe61Le-kmow"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Thunderbolts</h1>
+
+    <div class="rating">
+      <span>⭐ 6/10 (117K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>2h 7m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Superhero</div>
+      <div>PG-13</div>
+      <div>1 May,2025</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Thunderbolts')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Marvel Studios and a crew of indie veterans who sold out present "Thunderbolts*," an irreverent team-up featuring depressed assassin Yelena Belova alongside the MCU`s least anticipated band of misfits.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Florence_Pugh"><img src="florence-pugh.avif"></a><p>Florence Pugh</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Sebastian_Stan"><img src="sebastian-stan.avif"></a><p>Sebastian Stan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/David_Harbour"><img src="david-harbour.avif"></a><p>David Harbour</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Wyatt_Russell"><img src="wyatt-russell.avif"></a><p>Wyatt Russell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Olga_Kurylenko"><img src="olga-kurylenko.avif"></a><p>Olga Kurylenko</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Lewis_Pullman"><img src="lewis-pullman.avif"></a><p>Lewis Pullman</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

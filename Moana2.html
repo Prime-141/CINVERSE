@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moana 2 - Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), 
+    url('moana-2-wallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="moana-2.avif" alt="Moana 2">
+    <a href="https://www.youtube.com/watch?v=hDZ7y8RP5HE"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Moana 2</h1>
+
+    <div class="rating">
+      <span>⭐ 8.4/10 (22.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+    </div>
+
+    <div class="info">
+      <div>1h 40m</div>
+      <div>Adventure</div>
+      <div>Comedy</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>29 Nov,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Moana 2')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she`s ever faced.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Auli%CA%BBi_Cravalho"><img src="auli-i-cravalho.avif"></a><p>Auli`i Cravalho</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Dwayne_Johnson"><img src="dwayne-johnson.avif"></a><p>Dwayne Johnson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Alan_Tudyk"><img src="alan-tudyk.avif"></a><p>Alan Tudyk</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Nicole_Scherzinger"><img src="nicole-scherzinger.avif"></a><p>Nicole Scherzinger</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Temuera_Morrison"><img src="temuera-morrison-iein.avif"></a><p>Temuera Morrison</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Jemaine_Clement"><img src="jemaine-clement.avif"></a><p>Jemaine Clement</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

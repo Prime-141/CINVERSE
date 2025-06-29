@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Singham Again- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.45)), 
+    url('singham-again-wallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="singham-again.avif" alt="Singham Again Poster">
+    <a href="https://www.youtube.com/watch?v=MD7v0-igVIM"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Singham Again</h1>
+
+    <div class="rating">
+      <span>⭐ 6.8/10 (186.2K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+     
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 24m</div>
+      <div>Action</div>
+      <div>Drama</div>
+      <div>Police</div>
+      <div>UA</div>
+      <div>1 Nov,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Singham-Agian')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>TIn the third installment of Singham series, the valiant cop Bajirao Singham and his team of brave hearts embark on a cross-border mission to rescue his beloved wife, Avni Singham, who has been abducted by a formidable antagonist. Upholding its legacy of never letting you down-never has, never will-this installment promises a fierce battle between good and evil. This timeless struggle will once again be fought through the indomitable spirit of Bajirao Singham. The legendary roar that began 13 years ago continues to resonate in the hearts of the audience.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Ajay_Devgn"><img src="ajay-devgn.avif"></a><p>Ajay Devgn</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kareena_Kapoor_Khan"><img src="kareena-kapoor-khan.avif"></a><p>Kareena Kapoor Khan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Akshay_Kumar"><img src="akshay-kumar.avif"></a><p>Akshay Kumar</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Deepika_Padukone"><img src="deepika-padukone.avif"></a><p>Deepika Padukone</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Ranveer_Singh"><img src="ranveer_singh.avif"></a><p>Ranveer Singh</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Arjun_Kapoor"><img src="arjun-kapoor.avif"></a><p>Ranveer Singh</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

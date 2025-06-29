@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Wild Robot - Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), 
+    url('the-wild-robot.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="the-wild-robot.avif" alt="The Wild Robot">
+    <a href="https://www.youtube.com/watch?v=njPNg0A9VpY"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>The Wild Robot</h1>
+
+    <div class="rating">
+      <span>⭐ 7.3/10 (8.4K Votes)</span>
+      <button>Rate now</button>
+    </div>  
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+    
+    </div>
+
+    <div class="info">
+      <div>1h 40m</div>
+      <div>Adventure</div>
+      <div>Family</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>18 Oct,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('The Wild Robot')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>Shipwrecked on a deserted island, a robot named Roz must learn to adapt to its new surroundings. Building relationships with the native animals, Roz soon develops a parental bond with an orphaned gosling.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Lupita_Nyong%27o"><img src="lupita-nyong.avif"></a><p>Lupita Nyong`o</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Pedro_Pascal"><img src="pedro-pascal.avif"></a><p>Pedro Pascal</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Catherine_O%27Hara"><img src="catherine-o-hara.avif"></a><p>Catherine O`Hara</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Bill_Nighy"><img src="bill-nighy.avif"></a><p>Bill Nighy</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Mark_Hamill"><img src="mark-hamill.avif"></a><p>Mark Hamill</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Ving_Rhames"><img src="ving-rhames.avif"></a><p>Ving Rhames</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

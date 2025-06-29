@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Red One- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+    url('red-one.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="red-one.jpg" alt="Red One Poster">
+    <a href="https://www.youtube.com/watch?v=U8XH3W0cMss"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Red One</h1>
+
+    <div class="rating">
+      <span>⭐ 6.3/10 (140K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>2h 3m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Comedy</div>
+      <div>PG-13</div>
+      <div>6 Nov,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Red One')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>After Santa Claus is kidnapped, the North Pole's Head of Security must team up with a notorious hacker in a globe-trotting, action-packed mission to save Christmas.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Dwayne_Johnson"><img src="dwayne-johnson.avif"></a><p>Dwayne Johnson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Chris_Evans_(actor)"><img src="ChrisEvans2023.jpg.webp"></a><p>Chris Evans</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Lucy_Liu"><img src="Lucy_Liu.jpg"></a><p>Lucy Liu</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/J._K._Simmons"><img src="JK_Simmons.jpg"></a><p>J.K. Simmons</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Bonnie_Hunt"><img src="Bonnie_Hunt.jpg"></a><p>Bonnie Hunt</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kristofer_Hivju"><img src="Kristofer_Hivju.jpg"></a><p>Kristofer Hivju</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

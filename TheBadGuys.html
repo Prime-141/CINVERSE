@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Bad Guys- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), 
+    url('the-bad-guys.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="the-bad-guys.avif" alt="The Bad Guys Poster">
+    <a href="https://www.youtube.com/watch?v=m8Xt0yXaDPU"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>The Bad Guys</h1>
+
+    <div class="rating">
+      <span>⭐ 6.8/10 (26.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Telugu</div>
+      <div>English</div>
+      <div>Hindi</div>  
+      <div>Tamil</div>
+    </div>
+
+    <div class="info">
+      <div>1h 40m</div>
+      <div>Adventure</div>
+      <div>comedy</div>
+      <div>Animated</div>
+      <div>U</div>
+      <div>20 May, 2022</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('The Bad Guys')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>One day, the leader of a criminal gang decides that he wants to change his ways. His decision unleashes chaos in the gang and its members try to tempt him back into a life of crime.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Sam_Rockwell"><img src="sam-rockwell.avif"></a><p>Sam Rockwell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Awkwafina"><img src="awkwafina.avif"></a><p>Awkwafina</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Anthony_Ramos"><img src="anthony-ramos.avif"></a><p>Anthony Ramos</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Craig_Robinson_(actor)"><img src="craig-robinson.avif"></a><p>Craig Robinson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Zazie_Beetz"><img src="zazie-beetz.avif"></a><p>Zazie Beetz</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Alex_Borstein"><img src="alex-borstein.avif"></a><p>Alex Borstein</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

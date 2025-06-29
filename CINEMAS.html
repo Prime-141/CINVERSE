@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <style>
+        
+        body{
+            margin: 0;
+            padding: 0;
+            padding-top: 60px;
+
+            text-align: center;
+            color: white;
+            scroll-behavior: smooth;
+           background: linear-gradient(45deg , black, rgb(49, 48, 48));
+           background: linear-gradient(45deg, #0d0d0d, #232323);
+           background: linear-gradient(45deg, #0a0f1c, #1a1f2e);
+           background: linear-gradient(45deg, #0a0f1c, #141414);
+            
+        }
+        .wrap{
+            display: flex;
+           
+            gap: 20px;
+            justify-content: flex-start;
+            margin-top: 20px;
+            overflow-x: auto;
+            padding: 20px 20px 40px 20px;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+        }
+        
+      
+       
+        .container{
+            width: 220px;
+            background-color: rgb(0, 0, 0);
+            background-color: #1c1c1c;
+            background-color: #181c29;
+            background: rgba(24, 28, 41, 0.5);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+           
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            flex-shrink: 0;
+           
+
+        }
+        .scroll-container-wrapper{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .scroll-btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 15px;
+            border-radius:50% ;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 20px;
+            background-color: rgb(254, 254, 254);
+            backdrop-filter: blur(10px);
+            font-size: 30px;
+            font-weight: 900;
+            padding: 5px 5px;
+            cursor: pointer;
+
+            
+            
+        }
+        .scroll-btn:focus{
+            outline: none;
+        }
+        .scroll-btn.left{
+            left: 10px;
+        }
+        .scroll-btn.right{
+            right: 10px;
+        }
+        .scroll-btn:hover{
+            background-color: rgb(208, 149, 149);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+           
+        }
+        .container:hover{
+            transform: scale(1.05);
+            
+            transition: 0.9s;
+            animation: colorPulse 5s infinite alternate;
+            
+        }
+        @keyframes colorPulse{
+            0%{
+                box-shadow: 0 0 10px red, 0 0 20px rgba(255, 0, 0, 0.259);
+            }
+            
+      100% {
+        box-shadow: 2px 5px 10px red, 0 0 20px red;
+      }
+        }
+        
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        .container:hover img {
+  box-shadow: 0 5px 25px rgba(255, 38, 0, 0.7);
+}
+        .details{
+            padding: 1px;
+            text-align: center;
+                       
+        }
+        h2{
+            
+            
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform:capitalize;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 35px;
+            color: red;
+        }
+        
+        nav{
+            position: fixed;
+            width: 100%;
+            background:linear-gradient(45deg, rgb(24, 23, 23),rgb(31, 10, 10));
+            
+            top: 0;
+            z-index: 999;
+            text-align: center;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px;
+            border-radius: 4px;
+
+            
+        }
+        nav a{
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            display: inline-block;
+            font-weight: bold;
+            
+            transition: transform 5.3s ease, text-shadow 0.3s ease, color 0.5s ease-in;
+            
+        }
+        nav a:hover{
+            
+            transform: scale(1.1);
+            text-shadow: 2px 2px 5px rgb(255, 4, 4);
+            color: red;
+            
+            color: red;
+            text-decoration: underline;
+        }
+        nav a::before{
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 3px;
+            background-color: red;
+            transition: width .5s ease;
+        }
+        nav a:hover::before{
+            width: 100%;
+        }
+        section{
+            padding: 50px 20px;
+            height: auto;
+            scroll-behavior: smooth;
+            
+            
+
+        }
+        
+       
+        .title{
+           
+            padding: 5px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: cursive;
+            color: #e50914;
+        }
+        
+        
+        .foot{
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-family: cursive;
+            
+
+        }
+        .movies a{
+            color: #ccc;
+            margin: 0 10px;
+            text-decoration: none;
+
+        }
+        hr{
+            border: none;
+  height: 1px;
+  background: linear-gradient(to right, #ff0000, #3333ff);
+  margin: 5px 0;
+        }
+
+
+        /* image going from left to right */
+        .carousel-wrapper {
+      overflow: hidden;
+      white-space: nowrap; /*"Don't wrap the content to the next line. Keep everything in a single horizontal line."*/
+      position: relative;
+      width: 100%;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+    
+    .carousel {
+      display: inline-block;
+      animation: scroll 5s linear infinite alternate;
+    }
+
+    .carousel:hover {
+      animation-play-state: paused;
+    }
+
+    .carousel img {
+      width: 600px;
+      height: 400px;
+      object-fit: cover;
+      margin: 0 10px;
+      border-radius: 10px;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+    button{
+        background-color: red;
+        font-size: 30px;
+        border-radius: 50%;
+        
+
+    }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <div class="title">🎬CineVerse</div>
+        <div>
+        <a href="index.html">Home</a>
+        <a href="#animated">Animated</a>
+        <a href="#hollywood">Hollywood</a>
+        <a href="#bollywood">Bollywood</a>
+        <a href="#south">South</a>
+        <a href="#upcoming">Upcoming movies</a>
+        </div>
+    </nav>
+ 
+    <div class="carousel-wrapper">
+    <div class="carousel">
+      <!-- Duplicate this image set to make it loop -->
+      <a href="Minecraft.html"><img src="minecraft-wallpaper.jpg" alt="Movie 1"></a>
+      <a href="Transformer-One.html"><img src="transformer-wallpaper.jpg" alt="Movie 2"></a>
+      <a href="Sinners.html"><img src="sinnerswallpapers.jpg" alt="Movie 3"></a>
+      <a href="fighter.html"><img src="fighter-wallpapers.jpg" alt="Movie 4"></a>
+      <a href="KungFuPanda4.html"><img src="kung-fu-panda-4.avif" alt="Movie 5"></a>
+      
+    </div>
+  </div>
+ <!-- <button onclick="playMusic()">🎧</button>
+
+<audio id="bg-music" loop>
+  <source src="Assassin's Creed Rogue (OST) - Assassin's Creed Rogue Main Theme (Track 01).mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<script>
+  function playMusic() {
+    document.getElementById("bg-music").play();
+  }
+</script> -->
+<section id="animated" >
+    <h2>ANIMATED</h2>
+<div class="scroll-container-wrapper">
+
+    <button class="scroll-btn left" onclick="scrollContent('left','animatedScroll')">&#11013;</button>
+    
+    <div class="wrap" id="animatedScroll"> 
+        <div class="container">
+            <a href="Minecraft.html"><img src="A_Minecraft_Movie_poster.jpg"></a>
+            <div class="details">
+                <b>Minecraft</b> <br>
+                Adventure/Comedy
+                
+            </div>
+            
+        </div>
+        
+        
+        <div class="container">
+            <a href="Transformer-One.html"><img src="Transformers_One_Official_Poster.jpg"></a>
+            <div class="details">
+                <b>Transformers One</b><br>
+                Sci-Fi/Action/Animation
+            </div>
+        </div>
+        <div class="container">
+            <a href="InsideOut2.html"><img src="p_insideout2_now_available_disneyplus_d24c051c.jpeg"></a>
+            <div class="details">
+                <b>Inside Out 2</b><br>
+                Animated/Family/Emotional/<br>Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="WildRobot.html"><img src="wild robot.jpeg"></a>
+            <div class="details">
+                <b>Wild Robot</b><br>
+                Animated/Family/Emotional
+            </div>
+        </div>
+        <div class="container">
+            <a href="Moana2.html"><img src="moana 2.jpeg"></a>
+            <div class="details">
+                <b>Moana 2</b><br>
+                Animated/Adventure
+            </div>
+        </div>
+        <div class="container">
+            <a href="KungFuPanda4.html"><img src="Kung_Fu_Panda_4_poster.jpg"></a>
+            <div class="details">
+                <b>Kung fu Panda 4</b><br>
+                Animated/Action/Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="DespicableMe4.html"><img src="dp4.jpeg"></a>
+            <div class="details">
+                <b>Despicable Me 4</b><br>
+                Animated/Action/Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="Mufasa.html"><img src="mufasa.jpg"></a>
+            <div class="details">
+                <b>Mufasa : The lion King</b><br>
+                Animated/Adventure
+            </div>
+        </div>
+        <div class="container">
+            <a href="TheBadGuys.html"><img src="the bad guys.jpeg"></a>
+            <div class="details">
+                <b>The Bad Guys</b><br>
+                Animated/Comedy
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="IF.html"><img src="if.jpeg"></a>
+            <div class="details">
+                <b>IF</b><br>
+                Animated/Adventure/Drama
+            </div>
+        </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollContent('right','animatedScroll')">	&#10145;</button>
+</div>    
+</section>
+<hr>
+<section id="hollywood">
+    <h2>HOLLYWOOD</h2>
+<div class="scroll-container-wrapper">
+    <button class="scroll-btn left" onclick="scrollContent('left','hollywoodScroll')">&#11013;</button>
+    <div class="wrap" id="hollywoodScroll">
+        <div class="container">
+            <a href="Gladiator2.html"><img src="Gladiator_II_(2024)_poster.jpg"></a>
+            <div class="details">
+                <b>Gladiator_II_</b><br>
+                Action/Adventure
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="Trap.html"><img src="trap.jpg"></a>
+            <div class="details">
+                <b>Trap</b><br>
+                Psychological/Thriller
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="The-Order.html"><img src="the order.jpg"></a>
+            <div class="details">
+            <b>The Order</b><br>
+            Crime/Thriller
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="Kingdom-Apes.html"><img src="kingdom.jpeg"></a>
+            <div class="details">
+            <b>Kingdom of the Planet of the Apes</b><br>
+            Sci-Fi/Action
+            </div>
+        </div>
+        <div class="container">
+            <a href="Joker2.html"><img src="joker.jpg"></a>
+            <div class="details">
+            <b>Joker-2</b><br>
+            Crime/Drama/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="Thunderbolts.html"><img src="Thunderbolts.jpg"></a>
+            <div class="details">
+                <b>Thunderbolts</b><br>
+                Superhero/Action
+
+            </div>
+        </div>
+        <div class="container">
+            <a href="AQuitePlace.html"><img src="a quiet place day one.jpeg"></a>
+            <div class="details">
+            <b>A Quiet Place Day One</b><br>
+            Horror/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="Dune-Part2.html"><img src="dune part two.avif"></a>
+            <div class="details">
+            <b>Dune: Part Two</b><br>
+            Epic Sci-Fi
+            </div>
+        </div>
+        <div class="container">
+            <a href="Sinners.html"><img src="Sinner.jpg"></a>
+            <div class="details">
+                <b>Sinners</b><br>
+                Adventure
+                
+            </div>
+        </div>
+        
+        
+       
+        <div class="container">
+            <a href="Deadpool - Wolverine.html"><img src="deadpoolwolverine.jpg"></a>
+            <div class="details">
+            <b>Deadpool And Wolverine</b><br>
+            Superhero/Action/Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="Red-One.html"><img src="Redone.webp"></a>
+            <div class="details">
+            <b>Red One</b><br>
+            Action/Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="Venom.html"><img src="venom3.jpg"></a>
+            <div class="details">
+            <b>Venom: The Last Dance</b><br>
+            Superhero/Action
+            </div>
+        </div>
+        <div class="container">
+            <a href="Godzilla-Kong.html"><img src="godzillakong.jpg"></a>
+            <div class="details">
+            <b>Godzilla x Kong : The New Empire</b><br>
+            Monster/Action
+            </div>
+        </div>
+
+    </div>
+    <button class="scroll-btn right" onclick="scrollContent('right','hollywoodScroll')">&#10145;</button>
+</div>    
+</section>
+<hr>
+<section id="bollywood">
+    <H2>BOLLYWOOD</H2>
+<div class="scroll-container-wrapper">
+    
+    <button class="scroll-btn left" onclick="scrollContent('left','bollywoodScroll')">&#11013;</button>
+    <div class="wrap" id="bollywoodScroll">
+        <div class="container">
+            <a href="fighter.html"><img src="Fighter_film_teaser.jpg"></a>
+            <div class="details">
+            <b>Fighter</b><br>
+            Action/Adventure
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="Singam-Again.html"><img src="Singham-Agian.jpg"></a>
+            <div class="details">
+            <b>Singham-Agian</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="Baby-John.html"><img src="baby john.webp"></a>
+            <div class="details">
+            <b>Baby John</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="Stree2.html"><img src="stree 2.jpg"></a>
+            <div class="details">
+            <b>Stree 2</b><br>
+            Horror/Comedy
+            </div>
+        </div>
+        <div class="container">
+            <a href="sikander.html"><img src="Skinader.jpeg"></a>
+            <div class="details">
+            <b>Sikander</b><br>
+            Action/Adventure
+            </div>
+        </div>
+        <div class="container">
+            <a href="Deva.html"><img src="Deva.jpg"></a>
+            <div class="details">
+            <b>Deva</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="Chhaava.html"><img src="2678612-csm.avif"></a>
+            <div class="details">
+            <b>Chaava</b><br>
+            Action/Biopic
+            </div>
+        </div>
+        <div class="container">
+            <a href="SkyForce.html"><img src="sky force.jpeg"></a>
+            <div class="details">
+            <b>Sky Force</b><br>
+            Action/Biopic/Thriller
+            </div>
+        </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollContent('right','bollywoodScroll')">&#10145;</button>
+</div>
+</section>
+<hr>
+<section id="south">
+    <h2>SOUTH</h2>
+<div class="scroll-container-wrapper">
+    
+    <button class="scroll-btn left" onclick="scrollContent('left','southScroll')">&#11013;</button>
+    <div class="wrap" id="southScroll">
+        <div class="container">
+            <a href="Puspa2.html"><img src="puspa.webp"></a>
+            <div class="details">
+            <b>Pushpa 2 : The Rule</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="Vettaiyan.html"><img src="Vettaiyan.jpeg"></a>
+            <div class="details">
+            <b>Vettaiyan</b><br>
+            Crime/Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="GOAT.html"><img src="The-Greatest-of-All-Time-2024-Action-SciFi-Thriller-Tamil-Movie-Review.webp"></a>
+            <div class="details">
+            <b>The Greatest of All Time</b><br>
+            Action/Sci-fi
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <a href="Devara.html"><img src="devara.jpeg"></a>
+            <div class="details">
+            <b>Devara: Part 1</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="kalki.html"><img src="kalki29.jpg"></a>
+            <div class="details">
+            <b>Kalki 2898 AD</b><br>
+            Action/Sci-fi/Adventure
+            </div>
+        </div>
+        <div class="container">
+            <a href="Vidaamuyarchi.html"><img src="vidaamuyarchi.jpg"></a>
+            <div class="details">
+            <b>Viddamuyarchi</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        <div class="container">
+            <a href="inside2.html"><img src="l2.jpeg"></a>
+            <div class="details">
+            <b>L2: Empuraan</b><br>
+            Action/Thriller
+            </div>
+        </div>
+        
+        
+        <div class="container">
+            <a href="Amaran.html"><img src="Amaran.avif"></a>
+            <div class="details">
+            <b>Amaran</b><br>
+            Action/Adventure
+            </div>
+        </div>
+        <div class="container">
+            <a href="Raayan.html"><img src="Raayan.jpeg"></a>
+            <div class="details">
+            <b>Raayan</b><br>
+            Action/Adventure
+            </div>
+        </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollContent('right','southScroll')">&#10145;</button>
+</div>
+<hr>
+<section id="upcoming">
+
+    <h2>UPCOMING in cinemas</h2>
+<div class="scroll-container-wrapper">
+    
+    <button class="scroll-btn left" onclick="scrollContent('left','upcomingScroll')">&#11013;</button>
+    <div class="wrap" id="upcomingScroll">
+       
+        <div class="container">
+            <a href="baaghi4.html"><img src="Baghhi4.jpeg"></a>
+            <div class="details">
+                <b>Baaghi 4</b><br>
+                Action/Thriller
+                
+            </div>
+        </div>
+        <div class="container">
+            <a href="houseful5.html"><img src="Housefull_5.jpg"></a>
+            <div class="details">
+                <b>Housefull 5</b><br>
+                Drama/Comedy
+                
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="Coolie.html"><img src="Coolie.jpg"></a>
+            <div class="details">
+                <b>Coolie</b><br>
+                Action/Thriller
+                
+            </div>
+        </div>
+        
+        <div class="container">
+            <a href="KarateKid.html"><img src="Karate Kid.jpeg"></a>
+            <div class="details">
+                <b>Karate Kid : Legends</b><br>
+                Action/Sport
+                
+            </div>
+        </div>
+        <div class="container">
+            <a href="Dragon.html"><img src="How_To_Train_Your_Dragon_2025_Poster.jpg" alt="Dragon poster"></a>
+            <div class="details">
+                <b>How to Train your Dragon</b><br>
+                Action/Adventure/Thriller
+            </div>
+        </div>
+    </div>
+    <button class="scroll-btn right" onclick="scrollContent('right','upcomingScroll')">&#10145;</button>
+</div>
+</section>
+<hr><hr>
+<footer class="foot">
+    <p>&copy; 2025 MovieDekho. All rights reserved</p>
+    <p>Made with 💓 for movie lovers.</p>
+    <div style="margin-top: 10px;" class="movies">
+        <a href="#animated">Animated</a>
+        <a href="#hollywood">Hollywood</a>
+        <a href="#bollywood">Bollywood</a>
+        <a href="#south">South</a>
+    </div>
+</footer>
+
+
+    <script>
+        function scrollContent(direction, id) {
+            const container = document.getElementById(id);
+            const scrollAmount = 500; // change as needed
+        
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        </script>
+        
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trap (2024)- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, 0.5)), 
+    url('trap-2024.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="trap-2024.avif" alt="Trap (2024) Poster">
+    <a href="https://www.youtube.com/watch?v=hJiPAJKjUVg"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Trap (2024)</h1>
+
+    <div class="rating">
+      <span>⭐ 8.1/10 (153.3K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 30m</div>
+      <div>Crime</div>
+      <div>Mystery</div>
+      <div>Thriller</div>
+      <div>UA</div>
+      <div>2 Aug,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Trap')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>A father and his teen daughter attend a pop concert, where they realize they`re at the center of a dark and sinister event.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Josh_Hartnett"><img src="josh-hartnett.avif"></a><p>Josh Hartnett</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Alison_Pill"><img src="alison-pill.avif"></a><p>Alison Pill</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Hayley_Mills"><img src="Hayley_Mills.jpg"></a><p>Hayley Mills</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Saleka"><img src="Saleka-Night.jpeg"></a><p>Saleka</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Ariel_Donoghue"><img src="Ariel-Donoghuejpeg.jpeg"></a><p>Ariel Donoghue</p></div>
+    
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

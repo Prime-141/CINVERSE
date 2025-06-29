@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kingdom of the Planet of the Apes- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('kingdom-of-apes.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="kingdom.avif" alt="Kingdom of Apes Poster">
+    <a href="https://www.youtube.com/watch?v=XtFI7SNtVpY"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Kingdom of the Planet of the Apes</h1>
+
+    <div class="rating">
+      <span>⭐ 7.4/10 (24.5K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>2h 25m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Sci-Fi</div>
+      <div>UA</div>
+      <div>10 May,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Kingdom of the Planet of the Apes')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Set several generations in the future following Caesar`s reign, where apes are the dominant species living harmoniously and humans have been reduced to living in the shadows.</p>
+  <p>As a new tyrannical ape leader builds his empire, one young ape undertakes a harrowing journey that will cause him to question all that he has known about the past and to make choices that will define a future for apes and humans alike.</p>
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Owen_Teague"><img src="Owen_Teague.jpg"></a><p>Owen Teague</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kevin_Durand"><img src="Kevin_Durand.jpg"></a><p>Kevin Durand</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Peter_Macon"><img src="Peter_Macon.jpg"></a><p>Peter Macon</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Eka_Darville"><img src="Eka_Darville.jpg"></a><p>Eka Darville</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Freya_Allan"><img src="Actress_Freya_Allan_in_2024_(53704843534).jpg"></a><p>Freya Allan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/William_H._Macy"><img src="WilliamHMacy.jpg"></a><p>William H. Macy</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

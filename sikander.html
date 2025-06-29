@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sikandar- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8 ), rgba(0, 0, 0, 0.3)), 
+    url('sikandar.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="sikandar.avif" alt="Sikandar Poster">
+    <a href="https://www.youtube.com/watch?v=VlvOgk5BHS4"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Sikandar</h1>
+
+    <div class="rating">
+      <span>⭐ 6/10 (42.6K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 29m</div>
+      <div>Action</div>
+      <div>Thriller</div>
+      <div>Drama</div>
+      <div>UA13+</div>
+      <div>30 Mar,2025</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Sikandar')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Sikandar follows the journey of a man who overcomes all hurdles that life throws his way just so that he can alleviate the plight of the less fortunate and those in need of his help. His transition from a nonchalant man to a selfless man, inspired by his wife, makes him emerge as a beacon of hope for those ensnared in darkness.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Salman_Khan"><img src="salman-khan.avif"></a><p>Salman Khan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Rashmika_Mandanna  "><img src="rashmika-mandanna.avif"></a><p>Rashmika Mandanna</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Sathyaraj"><img src="sathyaraj.avif"></a><p>Sathyaraj</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Sharman_Joshi"><img src="sharman-joshi.avif"></a><p>Sharman Joshi</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Kajal_Aggarwal"><img src="kajal-aggarwal.avif"></a><p>Kajal Aggarwal</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Prateik_Babbar"><img src="prateik-babbar.avif"></a><p>Prateik Babbar</p></div>
+   </div>
+
+<script>
+  function bookMovie(Sikandar){
+  localStorage.setItem('selectedMovie',Sikandar);
+  window.location.href = "booking.html";
+}
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformers One - Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .container {
+        display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), 
+    url('transformer-wallpaper.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+  }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="transformers-one.avif" alt="Empuraan Poster">
+    <a href="https://www.youtube.com/watch?v=u2NuUWuwPCM"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Transformers One</h1>
+
+    <div class="rating">
+      <span>⭐ 7/10 (12.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 59m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>animation</div>
+      <div>Family</div>
+      <div>U</div>
+      <div>20 Sep, 2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Transformer One')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>Transformers One is the untold origin story of sworn enemies Optimus Prime and Megatron. But once are bonded like brothers, they change the fate of Cybertron forever.</p>
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Chris_Hemsworth"><img src="chris-hemsworth.avif"></a><p>Chris Hemsworth</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Brian_Tyree_Henry"><img src="brian-tyree-henry.avif"></a><p>Brian Tyree Henry</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Scarlett_Johansson"><img src="scarlett-johansson.avif"></a><p>Scarlett Johansson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Keegan-Michael_Key"><img src="keegan-michael-key.avif"></a><p>Keegan-Michael Key</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Laurence_Fishbur"><img src="steve-buscemi.avif"></a><p>Steve Buscemi</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Laurence_Fishburne"><img src="laurence-fishburne.avif"></a><p>Laurence Fishburne</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

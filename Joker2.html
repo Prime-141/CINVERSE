@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Joker: Folie a Deux- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), 
+    url('joker-folie-a-deux.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="joker-folie-a-deux.avif" alt="Joker: 2 Poster">
+    <a href="https://www.youtube.com/watch?v=_OKAwz2MsJs"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Joker: Folie a Deux</h1>
+
+    <div class="rating">
+      <span>⭐ 8.7/10 (56.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+    </div>
+
+    <div class="info">
+      <div>2h 30m</div>
+      <div>Drama</div>
+      <div>Suspense</div>
+      <div>Thriller</div>
+      <div>A</div>
+      <div>2 Oct,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Joker')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>"Joker: Folie A Deux" finds Arthur Fleck institutionalized at Arkham awaiting trial for his crimes as Joker. While struggling with his dual identity, Arthur not only stumbles upon true love, but also finds the music that`s always been inside him.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Joaquin_Phoenix"><img src="joaquin-phoenix.avif"></a><p>Joaquin Phoenix</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Lady_Gaga"><img src="lady-gaga.avif"></a><p>Lady Gaga</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Zazie_Beetz"><img src="zazie-beetz.avif"></a><p>Zazie Beetz</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Brendan_Gleeson"><img src="brendan-gleeson.avif"></a><p>Brendan Gleeson</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Catherine_Keener"><img src="catherine-keener.avif"></a><p>Catherine Keener</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Jacob_Lofland"><img src="jacob-lofland.avif"></a><p>Jacob Lofland</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

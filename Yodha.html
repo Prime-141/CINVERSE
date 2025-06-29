@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yodha- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.8 ), rgba(0, 0, 0, 0.3)), 
+    url('yodha.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="yodha.avif" alt="Yodha Poster">
+    <a href="https://www.youtube.com/watch?v=3AuB8RTfBJc"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Yodha</h1>
+
+    <div class="rating">
+      <span>⭐ 8.2/10 (30K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      <div>Hindi</div>
+      
+    </div>
+
+    <div class="info">
+      <div>2h 41m</div>
+      <div>Action</div>
+      <div>Thriller</div>
+      <div>Drama</div>
+      <div>UA16+</div>
+      <div>15 Mar,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Yodha')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>After failing at an important mission - years later, the system is shocked to find Arun on board in very mysterious circumstances on a hijacked flight. All evidence points towards Arun being on a mission for revenge against the system that snatched everything away from him.</p>
+  <p>Is Arun a traitor or is he the patriot that his father wished to be? It all unfolds in a high octane action packed thriller - 15,000 feet in the sky.</p>
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Sidharth_Malhotra"><img src="sidharth-malhotra.avif"></a><p>Sidharth Malhotra</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Raashii_Khanna  "><img src="raashi-khanna.avif"></a><p>Raashi Khanna</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Disha_Patani"><img src="disha-patani.avif"></a><p>Disha Patani</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Ronit_Roy"><img src="Ronit Roy.jpeg"></a><p>Ronit Roy</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Tanuj_Virwani"><img src="Tanuj_Virwani.jpg"></a><p>Tanuj Virwani</p></div>
+    
+   </div>
+
+<script>
+  function bookMovie(Yodha){
+  localStorage.setItem('selectedMovie',Yodha );
+  window.location.href = "booking.html";
+}
+</script>
+
+
+</body>
+</html>

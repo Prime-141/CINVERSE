@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sinners- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+    url('sinnerswallpapers.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="sinners.avif" alt="Sinners Poster">
+    <a href="https://www.youtube.com/watch?v=7joulECTx_U"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Sinners</h1>
+
+    <div class="rating">
+      <span>⭐ 8.2/10 (56K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+
+    </div>
+
+    <div class="info">
+      <div>2h 17m</div>
+      <div>Action</div>
+      <div>Thriller</div>
+      <div>Horror</div>
+      <div>R</div>
+      <div>18 Apr,2025</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Sinners')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Trying to leave their troubled lives behind, the twin brothers return to their hometown to start again, only to discover that an evengreater evil is waiting to welcome them back.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Michael_B._Jordan"><img src="michael-b.-jordan.avif"></a><p>Michael B. Jordan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Hailee_Steinfeld"><img src="hailee-steinfeld.avif"></a><p>Hailee Steinfeld</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Miles_Caton"><img src="Miles-Caton.jpeg"></a><p>Miles Caton</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Jack_O%27Connell_(actor)"><img src="Jack_O'Connell.jpg"></a><p>Jack O'Connell</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Wunmi_Mosaku"><img src="Wunmi_Mosaku.jpg"></a><p>Wunmi Mosaku</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Omar_Benson_Miller"><img src="Omar_Miller.jpg"></a><p>Omar Benson Miller</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

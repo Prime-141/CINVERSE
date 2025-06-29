@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Venom: The Last Dance- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.35)), 
+    url('venom-the-last-dance.avif');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="venom-the-last-dance.avif" alt="Venom: The Last Dance">
+    <a href="https://www.youtube.com/watch?v=__2bjWbetsA"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>Venom: The Last Dance</h1>
+
+    <div class="rating">
+      <span>⭐ 6/10 (117K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      <div>English</div>
+      <div>Hindi</div>
+      <div>Tamil</div>
+      <div>Telugu</div>
+    </div>
+
+    <div class="info">
+      <div>1h 50m</div>
+      <div>Action</div>
+      <div>Adventure</div>
+      <div>Thriller</div>
+      <div>PG-13</div>
+      <div>24 Oct,2024</div>
+    </div>
+
+    <button class="book-btn" onclick="bookMovie('Venom: The Last Dance')">
+      <i class="fas fa-ticket-alt"></i> Book Tickets
+
+    </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie:</h2>
+  <p>Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie`s last dance.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Tom_Hardy"><img src="tom-hardy.avif"></a><p>Tom Hardy</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Juno_Temple"><img src="juno-temple.avif"></a><p>Juno Temple</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Rhys_Ifans"><img src="rhys-ifans.avif"></a><p>Rhys Ifans</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Chiwetel_Ejiofor"><img src="chiwetel-ejiofor.avif"></a><p>Chiwetel Ejiofor</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Peggy_Lu"><img src="Peggy-Lu.jpeg"></a><p>Peggy Lu</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Stephen_Graham"><img src="Stephen_Graham.png"></a><p>Stephen Graham</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>

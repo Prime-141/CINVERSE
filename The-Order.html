@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Order- Movie Details</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="inside2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+ .container {
+  display: flex;
+  gap: 30px;
+  padding: 40px;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.45)), 
+    url('the-order.jpg');
+  background-size: cover; 
+  background-position: right;
+  color: white; 
+}
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="poster-section">
+    <img src="the-order.jpg" alt="The Order Poster">
+    <a href="https://www.imdb.com/video/vi1498334745/?ref_=ttvg_vi_2"target="_parent"><button>▶ Trailer</button></a>
+    <div class="status">In cinemas</div>
+  </div>
+
+  <div class="details">
+    <h1>The Order</h1>
+
+    <div class="rating">
+      <span>⭐ 6.8/10 (56.4K Votes)</span>
+      <button>Rate now</button>
+    </div>
+
+    <div class="tags">
+      <div>2D, IMAX 2D</div>
+      
+      
+      <div>English</div>
+      
+    </div>
+
+    <div class="info">
+        <div>2h 56m</div>
+        <div>Crime</div>
+        <div>Thriller</div>
+        <div>Drama</div>
+        <div>R</div>
+        <div>31 Aug,2024</div>
+      </div>
+
+      <button class="book-btn" onclick="bookMovie('The Order')">
+        <i class="fas fa-ticket-alt"></i> Book Tickets
+  
+      </button>
+  </div>
+</div>
+
+<div class="about">
+  <h2>About the movie</h2>
+  <p>A series of bank robberies and car heists frightened communities in the Pacific Northwest. A lone FBI agent believes that the crimes were not the work of financially motivated criminals, but rather a group of dangerous domestic terrorists.</p>
+  
+</div>
+<hr>
+<h2 style="color: black;">Cast : </h2>
+   <div class="container-cast">
+    <div><a href="https://en.wikipedia.org/wiki/Jude_Law"><img src="Jude_Law.png"></a><p>Jude Law</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Nicholas_Hoult"><img src="Nicholas_Hoult-67849_(cropped).jpg"></a><p>Nicholas Hoult</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Tye_Sheridan"><img src="Tye_Sheridanjpg.jpg"></a><p>Tye Sheridan</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Marc_Maron"><img src="Marc_Maron.jpg"></a><p>Marc Maron</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Odessa_Young"><img src="Odessa_Young.jpg"></a><p>Odessa Young</p></div>
+    <div><a href="https://en.wikipedia.org/wiki/Daniel_Doheny"><img src="Daniel_Doheny.jpg"></a><p>Daniel Doheny</p></div>
+   </div>
+<script>
+  function bookMovie(Movie){
+  localStorage.setItem('selectedMovie',Movie);
+  window.location.href = "booking.html";
+}
+</script>
+
+</body>
+</html>
